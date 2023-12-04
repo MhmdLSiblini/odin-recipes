@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background-color:beige;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 48px;
+    color: teal;
+}
+
+#home_list_design {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list_photo {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.photo_in_list {
+    width: 100%;
+    height: auto;
+    border: 8px solid teal;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-sizing: border-box;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px transparent;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list_photo:hover .photo_in_list {
+    transform: scale(1.1) translateZ(0);
+    filter: blur(5px);
+}
+
+.list_photo:hover .text-overlay {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.5px black;
+}
+
+@media screen and (max-width: 600px) {
+
+    #home_list_design{
+        flex-direction: column;
+        padding-top: 16px;
+    }
+
+    .photo_in_list {
+      width: 80%;
+    }
+  }
