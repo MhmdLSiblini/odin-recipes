@@ -12,7 +12,7 @@ This was a basic project from TOP that just needed basic HTML and CSS technology
 
 ## Demo
 
-The Website is Hosted ![HERE](https://mhmdlsiblini.github.io/odin-recipes/index.html)
+[Click Here To See The Hosted Site](https://mhmdlsiblini.github.io/odin-recipes/)
 
 Some Screenshots from the Site:
 
