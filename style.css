@@ -2,8 +2,13 @@
 
 html {
     scroll-behavior: smooth;
-    background-color:beige;
+    background-color: beige;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -31,26 +36,32 @@ li {
 }
 
 #home_list_design {
-    padding-top: 80px;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center; 
+    min-height: 77.2vh;
 }
 
 .list_photo {
     position: relative;
-    width: 100%;
     max-width: 400px;
     overflow: hidden;
+    width: 80%; /* Common style outside media queries */
+    margin-bottom: 5%; /* Common style outside media queries */
 }
 
 .photo_in_list {
     width: 100%;
+    max-width: 100%;
     height: auto;
     border: 8px solid teal;
     border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
     box-sizing: border-box;
+    margin: 0 auto; /* Common style outside media queries */
 }
 
 .text-overlay {
@@ -77,14 +88,41 @@ li {
     -webkit-text-stroke: 0.5px black;
 }
 
-@media screen and (max-width: 600px) {
+footer {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    #home_list_design{
+a.github {
+    color: orange;
+}
+
+a.github:hover {
+    color: rgb(255, 123, 0);
+}
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+    #home_list_design {
         flex-direction: column;
-        padding-top: 16px;
+        align-items: center;
+        padding-top: 30px;
+    }
+    
+    .text-overlay {
+        font-size: 56px; /* Adjusted font size for tablet screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #home_list_design {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
     }
 
-    .photo_in_list {
-      width: 80%;
+    .text-overlay {
+        font-size: 48px;
     }
-  }
+}
