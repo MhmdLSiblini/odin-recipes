@@ -1,5 +1,8 @@
 # odin-recipes
 Project to do while finishing The Odin Project
 
-17 Nov 2023
-Basic HTML Structure
+Went a little creative with this one
+
+This file includes:
+-Transitions
+-Media Query
