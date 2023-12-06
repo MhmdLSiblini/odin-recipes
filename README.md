@@ -16,13 +16,14 @@ This was a basic project from TOP that just needed basic HTML and CSS technology
 
 Some Screenshots from the Site:
 
-![Home Page](Media/Screenshot%201.png)
-![Recipe Page](Media/Screenshot%202.png)
+![Home Page](media/screenshot-1.png)
+![Recipe Page](media/screenshot-2.png)
 
 ## Features
 
 - Media Query
 - Transitions
+- Simple Animation
 
 ## Technologies Used
 

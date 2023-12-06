@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Quicksand:wght@400;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -17,7 +17,7 @@ h1 {
 }
 
 .Title {
-    margin: 2vh;
+    margin: 2vh ;
     text-align: center;
     font-size: 48px;
     color: teal;
@@ -28,44 +28,70 @@ h1 {
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     min-height: 80vh;
 }
 
 .list_photo {
+    display: flex;
+    box-shadow: 0 10px 40px rgb(0, 36, 36);
+    border-radius: 20px;
+    overflow: hidden;
     position: relative;
     max-width: 400px;
-    overflow: hidden;
     width: 80%;
-    margin-bottom: 5%;
+    box-shadow: 0 0 0 8px teal;
+    box-sizing: border-box;
+    margin: 24px auto;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .photo_in_list {
     width: 100%;
     max-width: 100%;
     height: auto;
-    border: 8px solid teal;
-    border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
-    box-sizing: border-box;
     margin: 0 auto;
+   
+}
+
+.list_photo:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.list_photo:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.list_photo:nth-child(3) {
+    animation-delay: 1.5s;
 }
 
 .text-overlay {
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
+    font-family: 'Lato', sans-serif;
     position: absolute;
+    text-decoration: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 56px;
+    font-size: 52px;
     font-weight: bold;
     color: transparent;
-    -webkit-text-stroke: 0.5px transparent;
-    transition: color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-text-stroke: 2.5px transparent;
+    transition: color 0.3s ease, box-shadow 0.3s ease, -webkit-text-stroke 0.3s ease;
+}
+
+.list_item_home{
+    list-style-type: none;
 }
 
 .list_photo:hover .photo_in_list {
@@ -76,7 +102,7 @@ h1 {
 .list_photo:hover .text-overlay {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 2.5px black;
 }
 
 footer {
