@@ -4,6 +4,8 @@
 
 This was a basic project from TOP that just needed basic HTML and CSS technology. However I tried to use some of what I know and learn more about what I can do
 
+Recipes Credit: [Delish.com](https://Delish.com)
+
 ## Table of Contents
 
 - [Demo](#demo)
